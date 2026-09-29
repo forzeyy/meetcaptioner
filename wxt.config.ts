@@ -33,6 +33,7 @@ export default defineConfig({
       "https://api.openai.com/*",
       "https://generativelanguage.googleapis.com/*",
       "https://api.deepseek.com/*",
+      "https://api.groq.com/*",
       "http://localhost/*",
       "http://localhost:11434/*",
       "http://127.0.0.1/*",

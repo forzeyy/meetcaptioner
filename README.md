@@ -161,3 +161,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 Made with care by [Le Hoang Tuan](https://github.com/LeHoangTuanbk)
+
+### Groq text translation
+
+Select **Groq** in extension settings, enter an API key from https://console.groq.com/keys, choose **Llama 3.3 70B** or **Llama 3.1 8B (Fast)**, and save. Enable translation and select the target language. Groq translates the text of Google Meet captions; enable captions in Meet. Audio is not sent to Groq. On a rate limit, the extension tries the other configured Groq model. Model availability and quotas depend on your Groq account.
