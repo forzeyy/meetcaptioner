@@ -22,6 +22,7 @@ export const MODELS: Record<Provider, readonly string[]> = {
     "gemini-3.1-pro-preview",
   ],
   [PROVIDERS.deepseek]: ["deepseek-flash"],
+  [PROVIDERS.groq]: ["llama-3.3-70b-versatile", "llama-3.1-8b-instant"],
   [PROVIDERS.ollama]: [],
 };
 
@@ -34,6 +35,7 @@ export const DEFAULT_SETTINGS: Settings = {
   openaiApiKey: "",
   geminiApiKey: "",
   deepseekApiKey: "",
+  groqApiKey: "",
   ollamaBaseUrl: "http://localhost:11434",
   ollamaApiKey: "",
   model: "gpt-4.1-nano",
