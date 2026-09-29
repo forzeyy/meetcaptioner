@@ -30,6 +30,11 @@ const PROVIDER_META: Record<
     name: "Gemini",
     guideUrl: "https://aistudio.google.com/app/apikey",
   },
+  groq: {
+    placeholder: "gsk_...",
+    name: "Groq",
+    guideUrl: "https://console.groq.com/keys",
+  },
   deepseek: {
     placeholder: "sk-...",
     name: "DeepSeek",

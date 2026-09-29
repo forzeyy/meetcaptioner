@@ -22,5 +22,9 @@ export const MODELS: Record<string, readonly { id: string; name: string }[]> = {
   deepseek: [
     { id: "deepseek-flash", name: "DeepSeek Flash" },
   ],
+  groq: [
+    { id: "llama-3.3-70b-versatile", name: "Llama 3.3 70B" },
+    { id: "llama-3.1-8b-instant", name: "Llama 3.1 8B (Fast)" },
+  ],
   ollama: [],
 };

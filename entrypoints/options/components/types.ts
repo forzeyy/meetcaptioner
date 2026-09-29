@@ -1,11 +1,12 @@
 import { DEFAULT_CAPTION_FONT_SIZE } from "@/shared/constants";
 
 export type Settings = {
-  provider: "anthropic" | "openai" | "gemini" | "deepseek" | "ollama";
+  provider: "anthropic" | "openai" | "gemini" | "deepseek" | "groq" | "ollama";
   anthropicApiKey: string;
   openaiApiKey: string;
   geminiApiKey: string;
   deepseekApiKey: string;
+  groqApiKey: string;
   ollamaBaseUrl: string;
   ollamaApiKey: string;
   model: string;
@@ -27,6 +28,7 @@ export const DEFAULT_SETTINGS: Settings = {
   openaiApiKey: "",
   geminiApiKey: "",
   deepseekApiKey: "",
+  groqApiKey: "",
   ollamaBaseUrl: "http://localhost:11434",
   ollamaApiKey: "",
   model: "gpt-4.1-nano",
