@@ -2,6 +2,7 @@ import type { Settings, TranslateRequest } from "../types";
 import { PROVIDERS } from "../types";
 import { translateWithAnthropic } from "./anthropic";
 import { translateWithDeepSeek } from "./deepseek";
+import { translateWithGroq } from "./groq";
 import { translateWithGemini } from "./gemini";
 import { translateWithOpenAI } from "./openai";
 
@@ -18,6 +19,8 @@ export const translateWithProvider = (
       return translateWithGemini(request, apiKey, model);
     case PROVIDERS.deepseek:
       return translateWithDeepSeek(request, apiKey, model);
+    case PROVIDERS.groq:
+      return translateWithGroq(request, apiKey, model);
     case PROVIDERS.openai:
       return translateWithOpenAI(request, apiKey, model);
     case PROVIDERS.ollama:
