@@ -15,6 +15,8 @@ function getApiKey(settings: Settings): string {
       return settings.geminiApiKey;
     case PROVIDERS.deepseek:
       return settings.deepseekApiKey;
+    case PROVIDERS.groq:
+      return settings.groqApiKey;
     default:
       return settings.openaiApiKey;
   }
