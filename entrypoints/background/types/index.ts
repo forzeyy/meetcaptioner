@@ -3,6 +3,7 @@ export const PROVIDERS = {
   openai: "openai",
   gemini: "gemini",
   deepseek: "deepseek",
+  groq: "groq",
   ollama: "ollama",
 } as const;
 
@@ -14,6 +15,7 @@ export type Settings = {
   openaiApiKey: string;
   geminiApiKey: string;
   deepseekApiKey: string;
+  groqApiKey: string;
   ollamaBaseUrl: string;
   ollamaApiKey: string;
   model: string;
