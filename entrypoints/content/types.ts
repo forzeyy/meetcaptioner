@@ -14,11 +14,12 @@ export type Caption = {
 };
 
 export type Settings = {
-  provider: "anthropic" | "openai" | "gemini" | "deepseek" | "ollama";
+  provider: "anthropic" | "openai" | "gemini" | "deepseek" | "groq" | "ollama";
   anthropicApiKey: string;
   openaiApiKey: string;
   geminiApiKey: string;
   deepseekApiKey: string;
+  groqApiKey: string;
   ollamaBaseUrl: string;
   ollamaApiKey: string;
   model: string;

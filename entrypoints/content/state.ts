@@ -29,6 +29,7 @@ export let settings: Settings = {
   openaiApiKey: "",
   geminiApiKey: "",
   deepseekApiKey: "",
+  groqApiKey: "",
   ollamaBaseUrl: "http://localhost:11434",
   ollamaApiKey: "",
   model: "gpt-4.1-nano",
@@ -52,6 +53,8 @@ export const hasActiveProviderCredentials = (): boolean => {
       return Boolean(settings.geminiApiKey);
     case "deepseek":
       return Boolean(settings.deepseekApiKey);
+    case "groq":
+      return Boolean(settings.groqApiKey);
     case "ollama":
       return (
         Boolean(settings.ollamaBaseUrl) &&
