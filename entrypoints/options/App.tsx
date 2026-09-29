@@ -14,6 +14,7 @@ const PROVIDERS = [
   { id: "anthropic", name: "Anthropic (Claude)" },
   { id: "gemini", name: "Google (Gemini)" },
   { id: "deepseek", name: "DeepSeek" },
+  { id: "groq", name: "Groq" },
   { id: "ollama", name: "Ollama (Local/Cloud)" },
 ];
 

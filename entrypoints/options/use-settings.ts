@@ -9,6 +9,7 @@ type ApiKeyField =
   | "openaiApiKey"
   | "geminiApiKey"
   | "deepseekApiKey"
+  | "groqApiKey"
   | "ollamaApiKey";
 
 const API_KEY_FIELD: Record<Provider, ApiKeyField> = {
@@ -16,6 +17,7 @@ const API_KEY_FIELD: Record<Provider, ApiKeyField> = {
   openai: "openaiApiKey",
   gemini: "geminiApiKey",
   deepseek: "deepseekApiKey",
+  groq: "groqApiKey",
   ollama: "ollamaApiKey",
 } as const;
 

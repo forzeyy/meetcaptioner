@@ -10,6 +10,7 @@ const PROVIDER_NAMES: Record<Provider, string> = {
   openai: "OpenAI",
   gemini: "Gemini",
   deepseek: "DeepSeek",
+  groq: "Groq",
   ollama: "Ollama",
 };
 
@@ -42,6 +43,13 @@ const requestValidation = (
         max_tokens: 1,
         messages: [{ role: "user", content: "Hi" }],
       }),
+    });
+  }
+
+  // Validate credentials without generating text or spending completion tokens.
+  if (provider === "groq") {
+    return fetch("https://api.groq.com/openai/v1/models", {
+      headers: { Authorization: `Bearer ${apiKey}` },
     });
   }
 
